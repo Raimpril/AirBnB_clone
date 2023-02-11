@@ -16,3 +16,8 @@ class HBNBCommand(cmd.Cmd):
         """The function we will used to handle end of line"""
         print()
         exit()
+if __name__ == '__main__':
+    """
+    MAIN Loop
+    """
+    HBNBCommand().cmdloop()
