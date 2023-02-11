@@ -8,7 +8,7 @@ class HBNBCommand(cmd.Cmd):
     command class interprete
     """
     prompt = '(hbnb) '
-     ERR = [
+    ERR = [
         '** class name missing **',
         '** class doesn\'t exist **',
         '** instance id missing **',
@@ -16,7 +16,6 @@ class HBNBCommand(cmd.Cmd):
         '** attribute name missing **',
         '** value missing **',
         ]
-
     def preloop(self):
         """
         handles intro to command interpreter
