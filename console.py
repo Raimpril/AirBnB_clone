@@ -7,13 +7,8 @@ class HBNBCommand(cmd.Cmd):
     """
     command class interprete
     """
-<<<<<<< HEAD
-    prompt = '(hbnb)'
-    def do_quit(self, line):
-=======
-     prompt = '(hbnb) '
+    prompt = '(hbnb) '
     def quit(self, line):
->>>>>>> c40c10f61eb5bbca8f5ac583f2da496cb714286c
         """The function or method used to quit the console"""
         quit()
 
