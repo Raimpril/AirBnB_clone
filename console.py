@@ -8,11 +8,11 @@ class HBNBCommand(cmd.Cmd):
     command class interprete
     """
      prompt = '(hbnb) '
-    def do_quit(self, line):
+    def quit(self, line):
         """The function or method used to quit the console"""
         quit()
 
-    def do_EOF(self, line):
+    def EOF(self, line):
         """The function we will used to handle end of line"""
         print()
         exit()
