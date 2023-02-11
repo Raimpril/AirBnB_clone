@@ -7,7 +7,7 @@ class HBNBCommand(cmd.Cmd):
     """
     command class interprete
     """
-     prompt = '(hbnb) '
+    prompt = '(hbnb)'
     def do_quit(self, line):
         """The function or method used to quit the console"""
         quit()
