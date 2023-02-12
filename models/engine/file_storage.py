@@ -1,10 +1,27 @@
 #!/usr/bin/python3
 """This module defines a class to manage file storage for hbnb clone"""
 import json
+from models import base_model, amenity, city, place, review, state, user
+from datetime import datetime
 
+strptime = datetime.strptime
+to_json = base_model.BaseModel.to_json
 
 class FileStorage:
     """This class manages storage of hbnb models in JSON format"""
+    CNC = {
+            'BaseModel': base_model.BaseModel,
+            'Amenity': amenity.Amenity,
+            'City': city.City,
+            'Place': place.Place,
+            'Review': review.Review,
+            'State': state.State,
+            'User': user.User
+            }
+    """CNC - this variable is a dictionary with:
+    keys: Class Names
+    values: Class type (used for instantiation)
+    """
     __file_path = 'file.json'
     __objects = {}
 
