@@ -6,10 +6,12 @@ from os import getenv
 storage_type = getenv('HBNB_TYPE_STORAGE')
 
 if storage_type == 'db':
-    from models.engine.db_storage import DBStorage
+    from models.engine.db_storage import DBStoragei
+    CNC = DBStorage.CNC
     storage = DBStorage()
 else:
     from models.engine.file_storage import FileStorage
+    CNC = FileStorage.CNC
     storage = FileStorage()
 
 storage.reload()

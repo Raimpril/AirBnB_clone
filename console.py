@@ -3,6 +3,7 @@
 Here we are creating a console application for the AIRbnb project
 """
 import cmd
+from models import storage, CNC
 class HBNBCommand(cmd.Cmd):
     """
     command class interprete
